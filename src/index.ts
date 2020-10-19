@@ -15,7 +15,7 @@ const app = express();
 app.use(bodyParser.json());
 
 // Serve the static files from the React app
-app.use(express.static(path.join(__dirname, 'client/build')));
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Handle api requests
 app.get("/api/*", (req: any, res: any) => {
